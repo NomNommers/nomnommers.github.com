@@ -14,9 +14,26 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 10px 0;
 	font-weight: 300;
 }
+h1 {
+	font-size: 24px;
+	font-weight: 400;
+}
 h2 {
-	text-transform: uppercase;
 	font-size: 18px;
+}
+.alpha {
+	margin-bottom: 1px;
+}
+.beta {
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.delta {
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 13px;
+	color: #666;
 }
 
 /* containers */
@@ -24,6 +41,8 @@ h2 {
 .navbar-static-top .container, 
 .navbar-fixed-top .container, 
 .navbar-fixed-bottom .container {
+	width: 100%;
+	max-width: 1300px;
 }
 
 /* Top branding and nav bar */
@@ -119,6 +138,53 @@ h2 {
 	border-bottom: 1px solid #ccc;
 }
 
+/* Recipe Module */
+.recipe-module {
+	padding: 0;
+	margin-bottom: 25px;
+	background: #fff;
+	box-shadow: 0 0 1px rgba(0,0,0,.3);
+	display: inline-block;
+}
+.span3.row-start {
+	margin-left: 0;
+}
+.recipe-module p {
+	padding: 0 15px;
+	line-height: 16px;
+}
+.recipe-module-header {
+	position: relative;
+}
+.recipe-module-img {
+	background: #ccc;
+	height: 300px;
+	max-width: 100%;	
+}
+.recipe-module-title {
+	position: absolute;
+	bottom: 0;
+	padding: 10px 15px;
+	margin: 0;
+	color: #fff;
+	background: rgba(0,0,0,.5);
+	line-height: 24px;
+}
+.recipe-module-tags {
+	margin-top: 10px;
+}
+.rating {
+	background: url('/img/rating-stars.png') no-repeat left center;
+	width: 64px;
+	height: 13px;
+	display: inline-block;
+}
+.source {
+	float: right;
+	color: #999;
+	font-style: italic;
+	font-size: 12px;
+}
 
 /* footer */
 #site-footer {
