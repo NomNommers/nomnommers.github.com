@@ -13,7 +13,7 @@ body {
 .navbar-inverse .navbar-inner {
 	background: #ffe6cd;
 	border: none;
-	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
 	filter: none;
 }
 .navbar .brand {
@@ -30,6 +30,22 @@ body {
 }
 .navbar .nav>li>a {
 	padding: 20px 15px 20px;
+	border-left: 1px solid rgba(0,0,0,.12);
+	box-shadow: inset 1px 0 0 #fff;
+	color: #555;
+}
+.navbar .nav>li>a:hover,
+.navbar .nav>li>a:focus {
+	color: #555;
+	background: #fbeede;
+}
+.navbar .nav .dropdown a {
+	background: #fbeede;
+	border-right: 1px solid rgba(0,0,0,.12);
+}
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle, .navbar-inverse .nav li.dropdown.active>.dropdown-toggle, .navbar-inverse .nav li.dropdown.open.active>.dropdown-toggle {
+	color: #555;
+	background: #f8e2c7;
 }
 .navbar-form {
 	padding: 10px 15px 0;	
@@ -62,6 +78,10 @@ body {
   *background-color: #ff2422;
 }
 
+/* Hero unit */
+.hero-unit {
+	background: #fefcf9;
+}
 
 
 
