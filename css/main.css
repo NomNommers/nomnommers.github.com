@@ -41,8 +41,9 @@ h2 {
 .navbar-static-top .container, 
 .navbar-fixed-top .container, 
 .navbar-fixed-bottom .container {
-	width: 100%;
-	max-width: 1300px;
+	width: 96%;
+	max-width: 1350px;
+	padding: 0 2%;
 }
 
 /* Top branding and nav bar */
@@ -140,11 +141,15 @@ h2 {
 
 /* Recipe Module */
 .recipe-module {
+	-webkit-transition: all .2s ease-in-out;
 	padding: 0;
 	margin-bottom: 25px;
 	background: #fff;
-	box-shadow: 0 0 1px rgba(0,0,0,.3);
+	box-shadow: 0 0 1px rgba(0,0,0,.8);
 	display: inline-block;
+}
+.recipe-module:hover {
+	box-shadow: 0 0 12px rgba(0,0,0,.6);
 }
 .span3.row-start {
 	margin-left: 0;
@@ -158,7 +163,7 @@ h2 {
 }
 .recipe-module-img {
 	background: #ccc;
-	height: 300px;
+	height: auto;
 	max-width: 100%;	
 }
 .recipe-module-title {
@@ -167,7 +172,7 @@ h2 {
 	padding: 10px 15px;
 	margin: 0;
 	color: #fff;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.6);
 	line-height: 24px;
 }
 .recipe-module-tags {
