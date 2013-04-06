@@ -1,0 +1,52 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+	 
+/* body */	 
+body {
+	background: #fdf7eb;
+}	
+
+/* Top branding and nav bar */
+.navbar-inverse .navbar-inner {
+	background: #ffe6cd;
+	border: none;
+	box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	filter: none;
+}
+.navbar .brand {
+	padding: 0;
+	margin: 6px 0;
+	height: 47px;
+	width: 97px;
+	background: url('/img/logo.png') no-repeat left top;
+	color: transparent;
+	text-indent: -999em;
+}
+.navbar .nav {
+
+}
+.navbar .nav>li>a {
+	padding: 20px 15px 20px;
+}
+.navbar-form {
+	padding: 10px 15px 0;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
