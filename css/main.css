@@ -59,7 +59,7 @@ label,
 
 /* Top branding and nav bar */
 .navbar-inverse .navbar-inner {
-	background: #ffe6cd;
+	background: rgba(255, 230, 205,.9);
 	border: none;
 	box-shadow: 0 1px 3px rgba(0,0,0,.2);
 	filter: none;
@@ -325,6 +325,35 @@ body.front {
 	color: #ddd;
 	border-right: 1px solid #333;
 	box-shadow: inset -1px 0 0 rgba(255,255,255,.1);
+}
+.social-links {
+	display: inline-block;
+	float: right;
+	margin: 4px 0;
+}
+.social-links ul {
+	margin-bottom: 0;
+}
+.social-links ul li {
+	display: inline-block;
+	margin-left: 3px;
+}
+.social-link {
+	-webkit-transition: all .2s ease-in-out;
+	display: block;
+	width: 40px;
+	height: 38px;
+	background: url('/img/social-sprite.png') no-repeat left top;
+	opacity: 0.75;
+}
+.social-link:hover {
+	opacity: 1;
+}
+.social-link-twitter {
+	background-position: -47px top;
+}
+.social-link-pinterest {
+	background-position: -94px top;
 }
 
 /* -------------------------
