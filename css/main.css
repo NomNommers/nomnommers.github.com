@@ -145,6 +145,28 @@ label,
   background-color: #ff2422;
   *background-color: #ff2422;
 }
+.btn.add {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	padding-left: 45px;
+	max-width: 200px;
+	float: right;
+	margin-top: -7px;
+}
+.btn.add span {
+	background: url('/img/icon-recipes.png') no-repeat left center;
+	background-size: 90%;
+	width: 40px;
+	height: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	left:10px;
+}
 
 /* Hero unit */
 .hero-unit {
@@ -158,6 +180,9 @@ body.front {
 }
 
 /* Search Results Page */
+a span {
+	color: #666;
+}
 .search-filters {
 	margin-left: 0;
 	padding-left: 30px;
@@ -184,6 +209,68 @@ body.front {
 		width: 45%;
 		display: inline-block;
 	}
+}
+
+/* Recipe Detail */
+.recipe-detail {
+	margin-top: 60px;
+}
+.recipe-detail-title {
+	margin-top: 15px;
+	font-size: 28px;
+	font-weight: 900;
+}
+.recipe-detail-tags {
+	font-style: italic;
+}
+.recipe-detail-img {
+	width: 100%;
+}
+/* Social Share */
+.share-wrap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 30px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #fefcf9;
+	width: 100%;
+	text-align: center;
+}
+.share-wrap ul {
+	margin: 0;
+}
+.share-wrap ul li {
+	display: inline-block;
+	margin: 0 6px;
+}
+.share-link {
+	-webkit-transition: all .2s ease-in-out;
+	display: block;
+	width: 30px;
+	height: 27px;
+	background: url('/img/share-sprite.png') no-repeat left top;
+	opacity: 0.8;
+}
+.share-link:hover {
+	opacity: 1;
+}
+.share-link-facebook{
+	width: 18px;
+}
+.share-link-twitter {
+	background-position: -37px 1px;
+}
+.share-link-gplus {
+	background-position: -88px top;
+	width: 22px;
+}
+.share-link-pinterest {
+	background-position: -136px top;
+	width: 24px;
+}
+.share-link-mail {
+	background-position: -176px 3px;
 }
 
 /* Recipe Module */
@@ -325,6 +412,7 @@ body.front {
 	color: #ddd;
 	border-right: 1px solid #333;
 	box-shadow: inset -1px 0 0 rgba(255,255,255,.1);
+	background: rgba(0,0,0,.2);
 }
 .social-links {
 	display: inline-block;
@@ -344,7 +432,7 @@ body.front {
 	width: 40px;
 	height: 38px;
 	background: url('/img/social-sprite.png') no-repeat left top;
-	opacity: 0.75;
+	opacity: 0.7;
 }
 .social-link:hover {
 	opacity: 1;
