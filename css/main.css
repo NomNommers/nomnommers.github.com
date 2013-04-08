@@ -226,6 +226,21 @@ a span {
 .recipe-detail-img {
 	width: 100%;
 }
+.rating-large {
+
+}
+.rating-star {
+	text-indent: -999em;
+	background: url('/img/star-sprite.png') no-repeat right top;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.rating-star:hover,
+.rating-star.active {
+	cursor: pointer;
+	background-position: left top;
+}
 /* Social Share */
 .share-wrap {
 	display: inline-block;
