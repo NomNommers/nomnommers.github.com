@@ -241,6 +241,48 @@ a span {
 	cursor: pointer;
 	background-position: left top;
 }
+.recipe-detail-steps {
+
+}
+.recipe-detail-step {
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.recipe-detail-step:nth-child(3n+3) {
+	border-right: none;
+}
+.recipe-detail-steps ol {
+	list-style-type: none;
+	margin: 0;
+}
+.recipe-detail-step-title {
+	width: 25%;
+	float: left;
+	text-align: center;
+	color: #999;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.recipe-detail-step-img {
+	width: 75%;
+	float: right;
+	margin-bottom: 20px;
+}
+.recipe-detail-step-directions {
+	margin-bottom: 20px;
+}
+.recipe-detail-step-title span {
+	display: block;
+	margin-top: -15px;
+	font-weight: 900;
+	font-size: 22px;
+	color: #333;
+}
+.recipe-detail-step:nth-child(3n+4) {
+	margin-left: 0;
+	clear: left;
+}
 /* Social Share */
 .share-wrap {
 	display: inline-block;
@@ -465,9 +507,30 @@ a span {
 .no-top-border {
 	border-top: none !important;
 }
+.zero-bottom-space {
+	margin-bottom: 0;
+}
+.zero-top-space {
+	margin-top: 0;
+}
 .text-center {
 	text-align: center;
 }
 .ir {
 	text-indent: -999em;
+}
+.border-wrap-box {
+	border: 1px solid #ddd;
+}
+.border-wrap-box.light {
+	background: #F9F9F9;
+}
+.border-wrap-box.no-side-borders {
+	border-left: none;
+	border-right: none;
+}
+hr {
+	border-top: 1px solid #ccc;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
