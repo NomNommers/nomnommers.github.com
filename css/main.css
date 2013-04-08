@@ -534,3 +534,7 @@ hr {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+.accordion-inner ul {
+	list-style-type: none;
+	margin: 0;
+}
