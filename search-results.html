@@ -67,8 +67,32 @@
 									
                     <h2 class="beta no-top-border">Taste</h2>
 										<div class="search-filters-body">
-	                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. </p>
-										</div>
+											
+											<h5 class="zeta">Sweet</h5>
+											<div class="scale-wrap">
+												<span class="min-scale">&#8722;</span>
+												<span class="max-scale">&#43;</span>
+		                    <div id="sweet"></div>
+												<span class="epsilon text-center slider-text">Slide to adjust taste</span>
+											</div>
+											
+											<h5 class="zeta">Spicy</h5>
+											<div class="scale-wrap">
+												<span class="min-scale">&#8722;</span>
+												<span class="max-scale">&#43;</span>											
+												<div id="spicy"></div>
+												<span class="epsilon text-center slider-text">Slide to adjust taste</span>
+											</div>
+											
+											<h5 class="zeta">Savory</h5>
+											<div class="scale-wrap">
+												<span class="min-scale">&#8722;</span>
+												<span class="max-scale">&#43;</span>																	
+												<div id="savory"></div>
+												<span class="epsilon text-center slider-text">Slide to adjust taste</span>
+											</div>
+											
+										</div>	
 										
                     <h2 class="beta">Cuisines</h2>
 										<form class="search-filters-body">
@@ -284,6 +308,14 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+				
+				<script>
+				  $(function() {
+				    $("#sweet").slider();
+						$("#spicy").slider();
+						$("#savory").slider();
+				  });
+				  </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

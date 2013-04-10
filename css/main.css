@@ -44,6 +44,22 @@ h2 {
 .gamma span {
 	font-size: 14px;
 }
+.epsilon {
+	font-size: 10px;
+	color: #aaa;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	margin-top: 0;
+}
+.zeta {
+	font-size: 15px;
+	color: #333;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 0;
+	font-weight: 600;
+}
 /* forms */
 input[type="checkbox"],
 input[type="radio"],
@@ -198,6 +214,7 @@ a span {
 	border-left: 1px solid #ccc;	
 }
 .search-filters-body {
+	padding: 20px 0;
 }
 .search-filters h2 {
 	background: #fdf7eb;
@@ -658,4 +675,161 @@ hr {
 }
 .link-alt2 {
 	color: #333;
+}
+
+/*!
+ * jQuery UI Slider 1.10.2
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Slider#theming
+ */
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	margin-top: -10px;
+	z-index: 2;
+	width: 29px;
+	height: 29px;
+	cursor: default;
+	border-radius: 29px;
+	box-shadow: 0 2px 6px rgba(0,0,0,.4);
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+.ui-slider-horizontal {
+	position: relative;
+	height: 3px;
+	width: 80%;
+	background: #999;
+}
+.ui-slider-horizontal:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	height: 3px;
+	background: #333;
+	width: 80%;
+	margin: 0 5%;	
+}
+.ui-slider-handle:before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 5px;
+	left: 5px;
+	height: 19px;
+	width: 19px;
+	border-radius: 19px;
+	box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+}
+.slider-text {
+	width: 80%;
+}
+#sweet,
+#spicy,
+#savory {
+	background: #eee;
+	border-radius: 10px;
+	box-shadow: inset 0 0 3px rgba(0,0,0,.1);
+	display: block;
+	padding: 10px;
+	margin: 10px 0 0;
+}
+#spicy {
+
+}
+#savory {
+
+}
+.scale-wrap {
+	position: relative;
+}
+.min-scale,
+.max-scale {
+	font-size: 10px;
+	color: #999;
+	position: absolute;
+	top: 0;
+	left: -15px;
+}
+.max-scale {
+	left: 90%;
+	margin-right: -15px;
+}
+#sweet.ui-slider-horizontal:before {
+	background: #dfffbf;
+	background: -moz-linear-gradient(left,  #dfffbf 0%, #85b200 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#dfffbf), color-stop(100%,#85b200));
+	background: -webkit-linear-gradient(left,  #dfffbf 0%,#85b200 100%);
+	background: -o-linear-gradient(left,  #dfffbf 0%,#85b200 100%);
+	background: -ms-linear-gradient(left,  #dfffbf 0%,#85b200 100%);
+	background: linear-gradient(to right,  #dfffbf 0%,#85b200 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfffbf', endColorstr='#85b200',GradientType=1 );
+}
+#spicy.ui-slider-horizontal:before {
+	background: #dfffbf;
+	background: -moz-linear-gradient(left,  #FFFFBF 0%, #FF2626 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#FFFFBF), color-stop(100%,#FF2626));
+	background: -webkit-linear-gradient(left,  #FFFFBF 0%,#FF2626 100%);
+	background: -o-linear-gradient(left,  #dfffbf 0%,#FF2626 100%);
+	background: -ms-linear-gradient(left,  #FFFFBF 0%,#FF2626 100%);
+	background: linear-gradient(to right,  #FFFFBF 0%,#FF2626 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFBF', endColorstr='#FF2626',GradientType=1 );
+}
+#savory.ui-slider-horizontal:before {
+	background: #00A3D9;
+	background: -moz-linear-gradient(left,  #BFFFFF 0%, #00A3D9 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#BFFFFF), color-stop(100%,#00A3D9));
+	background: -webkit-linear-gradient(left,  #BFFFFF 0%,#00A3D9 100%);
+	background: -o-linear-gradient(left,  #BFFFFF 0%,#00A3D9 100%);
+	background: -ms-linear-gradient(left,  #BFFFFF 0%,#00A3D9 100%);
+	background: linear-gradient(to right,  #BFFFFF 0%,#00A3D9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFFFFF', endColorstr='#00A3D9',GradientType=1 );
+}
+#sweet .ui-slider-handle {
+	background: #f0ffbf;
+}
+#spicy .ui-slider-handle {
+	background: #ffe598;
+}
+#savory .ui-slider-handle {
+	background: #99ffff;
+}
+#sweet .ui-slider-handle:before {
+	background: #86b100;
+}
+#spicy .ui-slider-handle:before {
+	background: #ff2928;
+}
+#savory .ui-slider-handle:before {
+	background: #00a4da;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: 5px;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
 }
