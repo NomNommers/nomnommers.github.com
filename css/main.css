@@ -191,6 +191,41 @@ label,
 	left:10px;
 }
 
+/* Front page */
+.front-page-intro {
+	position: relative;
+	font-size: 48px;
+	font-weight: 900;
+	color: #F85732;
+	text-shadow: 0 2px 1px rgba(255,255,255,.9);
+	margin-bottom: 20px;
+}
+.intro-search {
+	margin-top: 150px;
+}
+.intro-search p {
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	font-size: 18px;
+}
+.intro-search-form {
+	position: relative;
+	margin-top: 50px;
+}
+input[type="search"].intro-search-input {
+	padding: 27px;
+	font-size: 16px;
+}
+button[type="submit"].intro-search-button {
+	position: absolute;
+	right: 0;
+	top: -2px;
+	width: 70px;
+	height: 59px;
+	background: #FE9470 url('/img/search-button.png') no-repeat right top;
+	border: none;
+	border-top: 1px solid rgba(255,255,255,.7);
+	float: right;
+}
 /* Hero unit */
 .hero-unit {
 	background: #fefcf9;
